@@ -7,7 +7,7 @@ body {
   height: 100vh;
 }
 
-.active {
+.app__footer-item.active i {
   color: #555ebe !important;
 }
 
@@ -16,15 +16,23 @@ body {
 }
 
 .text-main-light {
-  color: #a78cd4
+  color: #a78cd4;
 }
 
 .text-warning-light {
-  color: #bc8e3f
+  color: #bc8e3f !important;
 }
 
 .text-success-light {
   color: #53ca76
+}
+
+.text-white {
+  color: #bdbdbd !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
 }
 
 #app {
@@ -53,7 +61,7 @@ body {
 }
 
 .app__content-container {
-  max-height: 450px;
+  max-height: 486px;
   height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -119,6 +127,9 @@ body {
   text-align: center;
   transition: all .3s ease-in-out;
   border-radius: 5px;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .app__footer-item:hover {
@@ -165,6 +176,32 @@ body {
 
 .app__content-login_item:hover {
   background-color: rgb(172, 172, 172);
+}
+
+.description-mov .modal-content {
+  background-color: #252525 !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.moda-body-user {
+  max-height: 70px;
+  max-width: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.moda-body-user img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal-description-option {
+  background-color: #252525;
+  border: 1px solid #1b1a19;
+  border-radius: 7px;
 }
 
 @media (max-width: 576px) {
