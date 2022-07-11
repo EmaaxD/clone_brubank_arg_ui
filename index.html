@@ -1,103 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bru Piola</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bru Piola</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-</head>
-<body class="d-flex justify-content-around align-items-center py-2">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="d-flex justify-content-around align-items-center py-2">
+    <div class="d-flex flex-column justify-content-between" id="app">
+      <div
+        class="app__header d-flex flex-column animate__animated animate__fadeIn"
+      >
+        <header class="app__header-menu px-2 py-3">
+          <div class="container d-flex justify-content-start">
+            <i class="fas fa-times text-white"></i>
+          </div>
+        </header>
 
-  <div class="d-flex flex-column justify-content-between" id="app">
-    <div class="app__header d-flex flex-column animate__animated animate__fadeIn">
-      <header class="app__header-menu px-2 py-3">
-        <div class="container d-flex justify-content-start">
-          <i class="fas fa-times text-white"></i>
-        </div>
-      </header>
+        <div
+          class="app__header-user d-flex flex-column justify-content-between align-items-center w-100"
+        >
+          <div class="app__header-user_name">
+            <img
+              src="https://www.pngkey.com/png/full/959-9597566_anime-logo-instagram-like-supreme-manga-hentai-anime.png"
+              alt="user logo"
+            />
+          </div>
+          <div class="app__header-user_icon my-3">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="app__header-user_icon_password d-flex flex-column w-100">
+            <small class="text-muted text-center mb-2">Ingresa tu clave</small>
 
-      <div class="app__header-user d-flex flex-column justify-content-between align-items-center w-100">
-        <div class="app__header-user_name">
-          <img src="https://www.pngkey.com/png/full/959-9597566_anime-logo-instagram-like-supreme-manga-hentai-anime.png" alt="user logo">
-        </div>
-        <div class="app__header-user_icon my-3">
-          <i class="fas fa-lock"></i>
-        </div>
-        <div class="app__header-user_icon_password d-flex flex-column w-100">
-          <small class="text-muted text-center mb-2">Ingresa tu clave</small>
-
-          <div class="d-flex justify-content-between">
-            <i class="fas fa-circle active"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
+            <div class="d-flex justify-content-between">
+              <i class="fas fa-circle active"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="app__content py-3 animate__animated animate__fadeIn">
-      <div class="app__content container p-0">
-        <div class="row text-white">
-          <div class="col-12">
-            <div>
-              <div class="text-center mb-4">
-                <a href="#!" class="text-decoration-none" style="color: #3b3a3f">Olvide mi clave</a>
-              </div>
-              <div class="d-flex flex-column px-3">
-                <div class="d-flex">
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>1</span>
-                  </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>2</span>
-                  </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>3</span>
-                  </div>
+      <div class="app__content py-3 animate__animated animate__fadeIn">
+        <div class="app__content container p-0">
+          <div class="row text-white">
+            <div class="col-12">
+              <div>
+                <div class="text-center mb-4">
+                  <a
+                    href="#!"
+                    class="text-decoration-none"
+                    style="color: #3b3a3f"
+                    >Olvide mi clave</a
+                  >
                 </div>
-                <div class="d-flex">
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>4</span>
+                <div class="d-flex flex-column px-3">
+                  <div class="d-flex">
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>1</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>2</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>3</span>
+                    </div>
                   </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>5</span>
+                  <div class="d-flex">
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>4</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>5</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>6</span>
+                    </div>
                   </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>6</span>
+                  <div class="d-flex">
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>7</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>8</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>9</span>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex">
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>7</span>
-                  </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>8</span>
-                  </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>9</span>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <i class="fas fa-fingerprint" style="color: #3b3a3f"></i>
-                  </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <span>0</span>
-                  </div>
-                  <div class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1">
-                    <i class="fas fa-backspace" style="color: #3b3a3f"></i>
+                  <div class="d-flex">
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <i class="fas fa-fingerprint" style="color: #3b3a3f"></i>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <span>0</span>
+                    </div>
+                    <div
+                      class="app__content-login_item d-flex justify-content-center align-items-center w-100 px-2 py-1"
+                    >
+                      <i class="fas fa-backspace" style="color: #3b3a3f"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -106,339 +156,940 @@
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="d-flex flex-column justify-content-between position-relative" id="app">
 
-    <div class="app__content h-100 animate__animated animate__fadeIn">
-      <div class="tab-content h-100" id="myTabContent">
+    <div
+      class="d-flex flex-column justify-content-between position-relative"
+      id="app"
+    >
+      <div class="app__content h-100 animate__animated animate__fadeIn">
+        <div class="tab-content h-100" id="myTabContent">
+          <!-- component Home -->
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <!-- Home header -->
+            <div
+              class="app__header d-flex flex-column animate__animated animate__fadeInDown"
+            >
+              <header class="app__header-menu px-2 pt-3 pb-4">
+                <div class="container d-flex justify-content-between">
+                  <div class="app__header-menu_icon">
+                    <i class="fas fa-search text-muted"></i>
+                  </div>
+                  <div
+                    class="app__header-menu_price d-flex flex-column align-items-center"
+                  >
+                    <small class="text-muted text-uppercase mb-1"
+                      >mi saldo</small
+                    >
+                    <div class="text-main-dark d-flex align-items-center">
+                      <small class="me-2">$</small>
+                      <h4 class="m-0">
+                        650.354,<small style="color: #373672; font-size: 14px"
+                          >01</small
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="app__header-menu_icon">
+                    <i class="far fa-bell text-muted"></i>
+                  </div>
+                </div>
+              </header>
 
-        <!-- component Home -->
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <!-- Home header -->
-          <div class="app__header d-flex flex-column animate__animated animate__fadeInDown">
-            <header class="app__header-menu px-2 pt-3 pb-4">
-              <div class="container d-flex justify-content-between">
-                <div class="app__header-menu_icon">
-                  <i class="fas fa-search text-muted"></i>
-                </div>
-                <div class="app__header-menu_price d-flex flex-column align-items-center">
-                  <small class="text-muted text-uppercase mb-1">mi saldo</small>
-                  <div class="text-main-dark d-flex align-items-center">
-                    <small class="me-2">$</small> 
-                    <h4 class="m-0">650.354,<small style="color: #373672; font-size: 14px;">01</small></h4>
+              <div
+                class="app__header-options d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="app__header-options_item d-flex flex-column justify-content-center align-items-center px-1"
+                >
+                  <div
+                    class="app__header-options_item_icon d-flex justify-content-center align-items-center mb-2"
+                  >
+                    <i class="fas fa-dollar-sign text-main-dark"></i>
                   </div>
+                  <small class="text-muted text-capitalize">prestamos</small>
                 </div>
-                <div class="app__header-menu_icon">
-                  <i class="far fa-bell text-muted"></i>
-                </div>
-              </div>
-            </header>
-      
-            <div class="app__header-options d-flex justify-content-center align-items-center">
-              <div class="app__header-options_item d-flex flex-column justify-content-center align-items-center px-1">
-                <div class="app__header-options_item_icon d-flex justify-content-center align-items-center mb-2">
-                  <i class="fas fa-dollar-sign text-main-dark"></i>
-                </div>
-                <small class="text-muted text-capitalize">prestamos</small>
-              </div>
-              <div class="app__header-options_item d-flex flex-column justify-content-center align-items-center mx-2 px-1">
-                <div class="app__header-options_item_icon rounded d-flex justify-content-center align-items-center mb-2">
-                  <i class="fas fa-arrow-down text-warning-light"></i>
-                </div>
-                <small class="text-muted text-capitalize">depositar</small>
-              </div>
-              <div class="app__header-options_item d-flex flex-column justify-content-center align-items-center px-1">
-                <div class="app__header-options_item_icon rounded d-flex justify-content-center align-items-center mb-2">
-                  <i class="fas fa-sync text-success-light"></i>
-                </div>
-                <small class="text-muted text-capitalize">inversiones</small>
-              </div>
-            </div>
-          </div>
 
-          <!-- Home content -->
-          <div class="app__content-container container p-0">
-            <div class="row">
-              <div class="col-12">
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="http://assets.stickpng.com/thumbs/58429054a6515b1e0ad75ab8.png" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">movistar</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">hoy 21:35</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white">-100<span class="text-muted">,00</span></h5>
-                    </div>
+                <div
+                  class="app__header-options_item d-flex flex-column justify-content-center align-items-center mx-2 px-1"
+                >
+                  <div
+                    class="app__header-options_item_icon rounded d-flex justify-content-center align-items-center mb-2"
+                  >
+                    <i class="fas fa-arrow-down text-warning-light"></i>
                   </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="http://assets.stickpng.com/thumbs/58429054a6515b1e0ad75ab8.png" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">movistar</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 08:30</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white">-100<span class="text-muted">,00</span></h5>
-                    </div>
+                  <small class="text-muted text-capitalize">depositar</small>
+                </div>
+
+                <div
+                  class="app__header-options_item d-flex flex-column justify-content-center align-items-center px-1"
+                >
+                  <div
+                    class="app__header-options_item_icon rounded d-flex justify-content-center align-items-center mb-2"
+                  >
+                    <i class="fas fa-sync text-success-light"></i>
                   </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://www.pngkey.com/png/full/959-9597566_anime-logo-instagram-like-supreme-manga-hentai-anime.png" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">head noise</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white">-50.200<span class="text-muted">,00</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
-                <button type="button" class="btn m-0 p-0 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2">
-                    <div class="app__content-mov_descripiton d-flex align-items-center w-100">
-                      <div class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success">
-                        <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="logo movi">
-                      </div>
-                      <div class="d-flex flex-column px-2">
-                        <span class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold">gerardo emanuel...</span>
-                        <small class="text-muted" style="font-size: 12px; width: fit-content;">ayer 16:20</small>
-                      </div>
-                    </div>
-                    <div class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center">
-                      <h5 class="text-white m-0">+100.754<span class="text-muted">,84</span></h5>
-                    </div>
-                  </div>
-                </button>
+                  <small class="text-muted text-capitalize">inversiones</small>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- component Card -->
-        <div class="tab-pane fade h-100" id="card" role="tabpanel" aria-labelledby="card-tab">
-          <div class="app__card d-flex p-2">
-            <h6 class="text-white">Mi tarjeta</h6>
-          </div>
-        </div>
-
-        <div class="tab-pane fade" id="transfer" role="tabpanel" aria-labelledby="transfer-tab">...</div>
-      </div>
-      
-    </div>
-
-    <div class="app__footer text-white px-2 animate__animated animate__fadeIn">
-      <div class="container d-flex justify-content-between p-0">
-        <ul class="nav nav-tabs w-100 justify-content-around border-0" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link app__footer-item active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-              <i class="text-muted fas fa-home"></i>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link app__footer-item" id="card-tab" data-bs-toggle="tab" data-bs-target="#card" type="button" role="tab" aria-controls="card" aria-selected="false">
-              <i class="text-muted far fa-credit-card"></i>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link app__footer-item" id="transfer-tab" data-bs-toggle="tab" data-bs-target="#transfer" type="button" role="tab" aria-controls="transfer" aria-selected="false">
-              <i class="text-muted fas fa-exchange-alt"></i>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link app__footer-item" id="transfer-tab" data-bs-toggle="tab" data-bs-target="#transfer" type="button" role="tab" aria-controls="transfer" aria-selected="false">
-              <i class="text-muted fas fa-chart-bar"></i>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link app__footer-item" id="transfer-tab" data-bs-toggle="tab" data-bs-target="#transfer" type="button" role="tab" aria-controls="transfer" aria-selected="false">
-              <i class="text-muted far fa-address-card"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- description mov modal -->
-    <div class="modal position-absolute overflow-hidden" id="exampleModal" tabindex="-1">
-      <div class="description-mov modal-dialog position-absolute bottom-0 m-0 w-100 border-0 animate__animated animate__fadeInUp">
-        <div class="modal-content border-0">
-          <div class="modal-header border-0 pb-0">
-            <button type="button" class="btn m-0 p-0" data-bs-dismiss="modal">
-              <i class="fas fa-times text-muted"></i>
-            </button>
-          </div>
-
-          <div class="modal-body">
-            <div class="container">
+            <!-- Home content -->
+            <div class="app__content-container container p-0">
               <div class="row">
-                <div class="col-12 text-white mb-3">
-                  <div class="d-flex flex-column justify-content-between align-items-center">
-                    <div class="moda-body-user">
-                      <img src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg" alt="">
+                <div class="col-12">
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://www.buscopng.com/wp-content/uploads/2020/10/M-de-Movistar-1024x755.png"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >movistar</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >hoy 21:35</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white">
+                          -100<span class="text-muted">,00</span>
+                        </h5>
+                      </div>
                     </div>
-                    <div class="moda-body-price my-2 d-flex align-items-center text-white">
-                      <small class="me-1" style="font-size: 12px;">$</small> <h4 class="m-0">100.754<span class="text-muted">,84</span></h4>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://www.buscopng.com/wp-content/uploads/2020/10/M-de-Movistar-1024x755.png"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >movistar</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 08:30</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white">
+                          -100<span class="text-muted">,00</span>
+                        </h5>
+                      </div>
                     </div>
-                    <div class="moda-body-service text-center">
-                      <p class="text-white text-capitalize m-0">alto pago</p>
-                      <small class="text-muted m-0">15 de abril de 2021 - 21:05</small>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://www.pngkey.com/png/full/959-9597566_anime-logo-instagram-like-supreme-manga-hentai-anime.png"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >head noise</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white">
+                          -50.200<span class="text-muted">,00</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn m-0 p-0 w-100 animate__animated animate__fadeIn animate__delay-5s"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <div
+                      class="app__content-mov d-flex justify-content-between mb-1 px-2 py-2"
+                    >
+                      <div
+                        class="app__content-mov_descripiton d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="app__content-mov_descripiton-img d-flex justify-content-center align-items-center rounded-circle bg-success"
+                        >
+                          <img
+                            src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                            alt="logo movi"
+                          />
+                        </div>
+                        <div class="d-flex flex-column px-2">
+                          <span
+                            class="app__content-mov_descripiton-user text-muted text-capitalize fw-bold"
+                            >gerardo emanuel...</span
+                          >
+                          <small
+                            class="text-muted"
+                            style="font-size: 12px; width: fit-content"
+                            >ayer 16:20</small
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="app__content-mov_price-entry d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <h5 class="text-white m-0">
+                          +100.754<span class="text-muted">,84</span>
+                        </h5>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- component Card -->
+          <div
+            class="tab-pane fade h-100"
+            id="card"
+            role="tabpanel"
+            aria-labelledby="card-tab"
+          >
+            <div class="p-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h6 class="text-white">Mi tarjeta</h6>
+
+                    <!-- card bru -->
+                    <div
+                      class="position-relative app__bruCard d-flex flex-column justify-content-between p-3 animate__animated animate__fadeInDown"
+                    >
+                      <div
+                        class="position-relative d-flex justify-content-end align-content-center"
+                      >
+                        <img
+                          class="position-absolute start-0"
+                          src="./assets/img/letrasLogo.png"
+                          width="100"
+                          height="60"
+                          alt="logo bru"
+                          style="z-index: -1; top: -21px"
+                        />
+                        <i class="fas fa-rss text-muted"></i>
+                      </div>
+
+                      <div class="d-flex flex-column gap-2">
+                        <div
+                          class="d-flex justify-content-center align-content-center gap-2"
+                        >
+                          <span
+                            class="text-muted"
+                            style="font-size: 20px; font-weight: 500"
+                            >1111</span
+                          >
+                          <span
+                            class="text-muted"
+                            style="font-size: 20px; font-weight: 500"
+                            >1111</span
+                          >
+                          <span
+                            class="text-muted"
+                            style="font-size: 20px; font-weight: 500"
+                            >1111</span
+                          >
+                          <span
+                            class="text-muted"
+                            style="font-size: 20px; font-weight: 500"
+                            >1111</span
+                          >
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between align-content-center"
+                        >
+                          <div class="d-flex flex-column">
+                            <small
+                              class="text-muted text-uppercase"
+                              style="font-size: 12px"
+                            >
+                              <b>nombre</b>
+                            </small>
+                            <p
+                              class="text-main-dark text-uppercase m-0"
+                              style="font-size: 14px"
+                            >
+                              <strong> emanuel mamani </strong>
+                            </p>
+                          </div>
+                          <div class="d-flex flex-column">
+                            <small
+                              class="text-muted text-uppercase"
+                              style="font-size: 12px"
+                            >
+                              <b>expira</b>
+                            </small>
+                            <p
+                              class="text-main-dark text-uppercase m-0"
+                              style="font-size: 14px"
+                            >
+                              <strong> 11/12 </strong>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="position-absolute w-50 h-50 top-50 start-50 translate-middle"
+                        src="./assets/img/miniLogo.png"
+                        alt="logo bru"
+                        style="z-index: -1; opacity: 0.2"
+                      />
+                    </div>
+
+                    <!-- options card bru -->
+                    <div class="d-flex flex-column gap-2 mt-3 px-2">
+                      <div
+                        class="d-flex align-items-center gap-4 py-2 px-3 app__bruCard_item animate__animated animate__fadeIn"
+                      >
+                        <i class="far fa-credit-card fa-lg text-main-dark"></i>
+                        <div class="d-flex flex-column">
+                          <p
+                            class="text-white m-0"
+                            style="font-size: 14px; font-weight: 500"
+                          >
+                            Extrar sin tarjeta
+                          </p>
+                          <small
+                            style="font-size: 11.5px; color: rgb(103, 103, 103)"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</small
+                          >
+                        </div>
+                        <i class="fas fa-angle-right fa-lg text-muted"></i>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center gap-4 py-2 px-3 app__bruCard_item animate__animated animate__fadeIn animate__delay-2s"
+                      >
+                        <i
+                          class="fas fa-globe-americas fa-lg text-main-dark"
+                        ></i>
+                        <div class="d-flex flex-column">
+                          <p
+                            class="text-white m-0"
+                            style="font-size: 14px; font-weight: 500"
+                          >
+                            Compras internacionales
+                          </p>
+                          <small
+                            style="font-size: 11.5px; color: rgb(103, 103, 103)"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</small
+                          >
+                        </div>
+                        <i class="fas fa-angle-right fa-lg text-muted"></i>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center gap-4 py-2 px-3 app__bruCard_item animate__animated animate__fadeIn animate__delay-3s"
+                      >
+                        <i class="fas fa-sliders-h fa-lg text-main-dark"></i>
+                        <div class="d-flex flex-column">
+                          <p
+                            class="text-white m-0"
+                            style="font-size: 14px; font-weight: 500"
+                          >
+                            Limites
+                          </p>
+                          <small
+                            style="font-size: 11.5px; color: rgb(103, 103, 103)"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elits.</small
+                          >
+                        </div>
+                        <i class="fas fa-angle-right fa-lg text-muted"></i>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center gap-4 py-2 px-3 app__bruCard_item animate__animated animate__fadeIn animate__delay-4s"
+                      >
+                        <i class="fas fa-pause fa-lg text-main-dark"></i>
+                        <div class="d-flex flex-column">
+                          <p
+                            class="text-white m-0"
+                            style="font-size: 14px; font-weight: 500"
+                          >
+                            Pausar tarjeta
+                          </p>
+                          <small
+                            style="font-size: 11.5px; color: rgb(103, 103, 103)"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elits.</small
+                          >
+                        </div>
+                        <i class="fas fa-angle-right fa-lg text-muted"></i>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center gap-4 py-2 px-3 app__bruCard_item animate__animated animate__fadeIn animate__delay-5s"
+                      >
+                        <i class="fas fa-comment fa-lg text-main-dark"></i>
+                        <div class="d-flex flex-column">
+                          <p
+                            class="text-white m-0"
+                            style="font-size: 14px; font-weight: 500"
+                          >
+                            Reportar tarjeta
+                          </p>
+                          <small
+                            style="font-size: 11.5px; color: rgb(103, 103, 103)"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elits.</small
+                          >
+                        </div>
+                        <i class="fas fa-angle-right fa-lg text-muted"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 text-white">
-                  <div class="d-flex flex-column justify-content-between h-100">
-                    <div class="modal-description-option d-flex justify-content-between align-items-center p-2 mb-2">
-                      <div>
-                        <i class="fas fa-book text-danger me-2"></i>
-                        <small class="text-capitalize text-danger">servicios</small>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="transfer"
+            role="tabpanel"
+            aria-labelledby="transfer-tab"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+
+      <!-- menu navegation app -->
+      <div
+        class="app__footer text-white px-2 animate__animated animate__fadeIn"
+      >
+        <div class="container d-flex justify-content-between p-0">
+          <ul
+            class="nav nav-tabs w-100 justify-content-around border-0"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link app__footer-item active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                <i class="text-muted fas fa-home"></i>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link app__footer-item"
+                id="card-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#card"
+                type="button"
+                role="tab"
+                aria-controls="card"
+                aria-selected="false"
+              >
+                <i class="text-muted far fa-credit-card"></i>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link app__footer-item"
+                id="transfer-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#transfer"
+                type="button"
+                role="tab"
+                aria-controls="transfer"
+                aria-selected="false"
+              >
+                <i class="text-muted fas fa-exchange-alt"></i>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link app__footer-item"
+                id="transfer-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#transfer"
+                type="button"
+                role="tab"
+                aria-controls="transfer"
+                aria-selected="false"
+              >
+                <i class="text-muted fas fa-chart-bar"></i>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link app__footer-item"
+                id="transfer-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#transfer"
+                type="button"
+                role="tab"
+                aria-controls="transfer"
+                aria-selected="false"
+              >
+                <i class="text-muted far fa-address-card"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- description mov modal -->
+      <div
+        class="modal position-absolute overflow-hidden"
+        id="exampleModal"
+        tabindex="-1"
+      >
+        <div
+          class="description-mov modal-dialog position-absolute bottom-0 m-0 w-100 border-0 animate__animated animate__fadeInUp"
+        >
+          <div class="modal-content border-0">
+            <div class="modal-header border-0 pb-0">
+              <button type="button" class="btn m-0 p-0" data-bs-dismiss="modal">
+                <i class="fas fa-times text-muted"></i>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 text-white mb-3">
+                    <div
+                      class="d-flex flex-column justify-content-between align-items-center"
+                    >
+                      <div class="moda-body-user">
+                        <img
+                          src="https://i.pinimg.com/564x/ed/b1/58/edb158c6be653eddfae6d9969ba6cc13.jpg"
+                          alt=""
+                        />
                       </div>
-                      <div>
-                        <button type="button" class="btn text-capitalize text-main-dark p-0">cambiar</button>
+                      <div
+                        class="moda-body-price my-2 d-flex align-items-center text-white"
+                      >
+                        <small class="me-1" style="font-size: 12px">$</small>
+                        <h4 class="m-0">
+                          100.754<span class="text-muted">,84</span>
+                        </h4>
+                      </div>
+                      <div class="moda-body-service text-center">
+                        <p class="text-white text-capitalize m-0">alto pago</p>
+                        <small class="text-muted m-0"
+                          >15 de abril de 2021 - 21:05</small
+                        >
                       </div>
                     </div>
-                    <div class="modal-description-option d-flex justify-content-between align-items-center p-2 mb-2">
-                      <div>
-                        <i class="fas fa-paperclip text-muted me-2"></i>
-                        <small class="text-capitalize text-muted">Ir al detalle de servicio</small>
+                  </div>
+                  <div class="col-12 text-white">
+                    <div
+                      class="d-flex flex-column justify-content-between h-100"
+                    >
+                      <div
+                        class="modal-description-option d-flex justify-content-between align-items-center p-2 mb-2"
+                      >
+                        <div>
+                          <i class="fas fa-book text-danger me-2"></i>
+                          <small class="text-capitalize text-danger"
+                            >servicios</small
+                          >
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="btn text-capitalize text-main-dark p-0"
+                          >
+                            cambiar
+                          </button>
+                        </div>
                       </div>
-                      <div>
-                        <button type="button" class="btn text-capitalize text-main-dark p-0">
-                          <i class="fas fa-chevron-right text-muted"></i>
-                        </button>
+                      <div
+                        class="modal-description-option d-flex justify-content-between align-items-center p-2 mb-2"
+                      >
+                        <div>
+                          <i class="fas fa-paperclip text-muted me-2"></i>
+                          <small class="text-capitalize text-muted"
+                            >Ir al detalle de servicio</small
+                          >
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="btn text-capitalize text-main-dark p-0"
+                          >
+                            <i class="fas fa-chevron-right text-muted"></i>
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="modal-description-option d-flex justify-content-between align-items-center p-2 mb-2">
-                      <div>
-                        <i class="fas fa-file-alt text-muted me-2"></i>
-                        <small class="text-capitalize text-muted">Ver comprobante</small>
+                      <div
+                        class="modal-description-option d-flex justify-content-between align-items-center p-2 mb-2"
+                      >
+                        <div>
+                          <i class="fas fa-file-alt text-muted me-2"></i>
+                          <small class="text-capitalize text-muted"
+                            >Ver comprobante</small
+                          >
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="btn text-capitalize text-main-dark p-0"
+                          >
+                            <i class="fas fa-chevron-right text-muted"></i>
+                          </button>
+                        </div>
                       </div>
-                      <div>
-                        <button type="button" class="btn text-capitalize text-main-dark p-0">
-                          <i class="fas fa-chevron-right text-muted"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-description-option d-flex justify-content-between align-items-center p-2">
-                      <div>
-                        <i class="fas fa-paperclip text-muted me-2"></i>
-                        <small class="text-capitalize text-muted">Agregar a grupo de gastos</small>
-                      </div>
-                      <div>
-                        <button type="button" class="btn text-capitalize text-main-dark p-0">
-                          <i class="fas fa-chevron-right text-muted"></i>
-                        </button>
+                      <div
+                        class="modal-description-option d-flex justify-content-between align-items-center p-2"
+                      >
+                        <div>
+                          <i class="fas fa-paperclip text-muted me-2"></i>
+                          <small class="text-capitalize text-muted"
+                            >Agregar a grupo de gastos</small
+                          >
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="btn text-capitalize text-main-dark p-0"
+                          >
+                            <i class="fas fa-chevron-right text-muted"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -449,7 +1100,5 @@
         </div>
       </div>
     </div>
-  </div>
-  
-</body>
+  </body>
 </html>

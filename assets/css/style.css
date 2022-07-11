@@ -24,7 +24,7 @@ body {
 }
 
 .text-success-light {
-  color: #53ca76
+  color: #53ca76;
 }
 
 .text-white {
@@ -43,6 +43,10 @@ body {
 }
 
 .app__header-menu_icon i {
+  cursor: pointer;
+}
+
+.app__header-options_item {
   cursor: pointer;
 }
 
@@ -76,13 +80,13 @@ body {
   background: transparent;
 }
 .app__content-container::-webkit-scrollbar-thumb {
-  background-color: rgb(172, 172, 172);;
+  background-color: rgb(172, 172, 172);
   border-radius: 6px;
 }
 
 .app__content-mov {
   cursor: pointer;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .app__content-mov:hover {
@@ -125,7 +129,7 @@ body {
 .app__footer-item {
   width: 100%;
   text-align: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 5px;
   background: transparent !important;
   box-shadow: none !important;
@@ -141,6 +145,26 @@ body {
   color: #555ebe !important;
 }
 
+/* styles for card screen */
+.app__bruCard {
+  height: 230px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-position: center;
+  background-size: cover;
+  border: 2px solid rgb(139, 139, 139);
+  border-radius: 10px;
+}
+
+.app__bruCard_item {
+  background: #1d1d1d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.app__bruCard_item:hover {
+  transform: scale(1.1);
+}
 
 /* styles for login */
 .app__header-user {
@@ -171,7 +195,7 @@ body {
 
 .app__content-login_item {
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .app__content-login_item:hover {
@@ -204,20 +228,24 @@ body {
   border-radius: 7px;
 }
 
+@media (max-width: 1200px) {
+  #app {
+    width: 40% !important;
+  }
+}
+
 @media (max-width: 576px) {
-  #app {
-    width: 90%;
+  body {
+    flex-direction: column;
+    height: fit-content;
   }
-}
 
-@media (min-width: 576px) {
-  #app {
-    width: 50%;
+  body > div {
+    margin-bottom: 20px;
   }
-}
 
-@media (min-width: 992px) {
   #app {
-    width: 25%;
+    width: 90% !important;
+    height: 800px;
   }
 }
